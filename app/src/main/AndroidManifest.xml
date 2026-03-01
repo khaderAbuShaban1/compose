@@ -12,25 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnCompose" >
         <activity
-            android:name=".state_remember_byActivity"
-            android:exported="false"
-            android:label="@string/title_activity_state_remember_by"
-            android:theme="@style/Theme.LearnCompose" />
-        <activity
-            android:name=".ui.theme.state_remember_byActivity"
-            android:exported="false"
-            android:label="@string/title_activity_state_remember_by"
-            android:theme="@style/Theme.LearnCompose" />
-        <activity
-            android:name=".CardActivity"
+            android:name=".TextFileldActivity"
             android:exported="true"
-            android:label="@string/title_activity_card"
+            android:label="@string/title_activity_text_fileld"
             android:theme="@style/Theme.LearnCompose" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".state_remember_byActivity"
+            android:exported="false"
+            android:label="@string/title_activity_state_remember_by"
+            android:theme="@style/Theme.LearnCompose" />
+
+        <activity
+            android:name=".CardActivity"
+            android:exported="true"
+            android:label="@string/title_activity_card"
+            android:theme="@style/Theme.LearnCompose" >
+
         </activity>
         <activity
             android:name=".MainActivity"

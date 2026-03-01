@@ -3,4 +3,5 @@
     <string name="title_activity_main2">MainActivity2</string>
     <string name="title_activity_card">CardActivity</string>
     <string name="title_activity_state_remember_by">state_remember_byActivity</string>
+    <string name="title_activity_text_fileld">TextFileldActivity</string>
 </resources>
