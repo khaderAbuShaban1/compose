@@ -12,9 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnCompose" >
         <activity
-            android:name=".TextFileldActivity"
+            android:name=".Navigations.HomeScreen"
             android:exported="true"
-            android:label="@string/title_activity_text_fileld"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/Theme.LearnCompose" >
+
+        </activity>
+        <activity
+            android:name=".Navigations.SecondScreen"
+            android:exported="false"
+            android:label="@string/title_activity_second_screen"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
+            android:name=".Navigations.Screen"
+            android:exported="false"
+            android:label="@string/title_activity_screen"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
+            android:name=".Navigations.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
             android:theme="@style/Theme.LearnCompose" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,24 +40,49 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Navigations.LastScreen"
+            android:exported="false"
+            android:label="@string/title_activity_last_screen"
+            android:theme="@style/Theme.LearnCompose" />
+
+
+
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="true"
+            android:label="@string/title_activity_progress"
+            android:theme="@style/Theme.LearnCompose" >
+        </activity>
+        <activity
+            android:name=".EffectHandlerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_effect_handler"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="true"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
+            android:name=".TextFileldActivity"
+            android:exported="true"
+            android:label="@string/title_activity_text_fileld"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
             android:name=".state_remember_byActivity"
             android:exported="false"
             android:label="@string/title_activity_state_remember_by"
             android:theme="@style/Theme.LearnCompose" />
-
         <activity
             android:name=".CardActivity"
             android:exported="true"
             android:label="@string/title_activity_card"
-            android:theme="@style/Theme.LearnCompose" >
-
-        </activity>
+            android:theme="@style/Theme.LearnCompose" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.LearnCompose" >
-        </activity>
+            android:theme="@style/Theme.LearnCompose" />
     </application>
 
 </manifest>
