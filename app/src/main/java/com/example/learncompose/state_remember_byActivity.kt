@@ -12,6 +12,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,14 +37,15 @@ class state_remember_byActivity : ComponentActivity() {
 
 @Composable
 private fun MyText(){
-    var count = 0
+    var count by remember {mutableStateOf(0)  }
     println("counter redeawn")
-    Text("number is $count",
+    Text("number is ${count}",
         style = androidx.compose.ui.text.TextStyle(color = Color.White),
         modifier = Modifier.background(color = Color.Red).
     clickable(onClick = {
-        println("counter cliked")
+        println("counter cliked ${count}")
         count++
+
     }))
 
 
