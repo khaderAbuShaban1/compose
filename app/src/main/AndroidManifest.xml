@@ -20,10 +20,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnCompose">
         <activity
-            android:name=".NavigationDrawer.MainActivity"
+            android:name=".MidExam.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.LearnCompose" >
+
+        </activity>
+        <activity
+            android:name=".MidExam.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.LearnCompose">
+
+        </activity>
+        <activity
+            android:name=".MidExam.SplashActivity"
+            android:exported="true"
+            android:label="@string/title_activity_q1"
+            android:theme="@style/Theme.LearnCompose">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,12 +45,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".NavigationDrawer.MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.LearnCompose" />
+        <activity
             android:name=".BottomSheet.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.LearnCompose">
-
-        </activity>
+            android:theme="@style/Theme.LearnCompose" />
         <activity
             android:name=".responsiveDesign.MainActivity"
             android:exported="false"
@@ -46,7 +63,7 @@
             android:name=".LazyGrid"
             android:exported="true"
             android:label="@string/title_activity_lazy_grid"
-            android:theme="@style/Theme.LearnCompose"></activity>
+            android:theme="@style/Theme.LearnCompose" />
         <activity
             android:name=".PermissienHandling.MainActivity"
             android:exported="true"

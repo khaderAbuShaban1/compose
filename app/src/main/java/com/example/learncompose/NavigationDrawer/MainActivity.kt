@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             LearnComposeTheme {
-                Screen()   // ← كان ناقص
+                Screen()
             }
         }
     }
@@ -140,7 +140,7 @@ fun TopBar(
                     .padding(start = 16.dp, end = 8.dp)
                     .size(28.dp)
                     .clickable {
-                        onOpenDrawer()   // ← هنا كان الخطأ
+                        onOpenDrawer()
                     }
             )
         },
